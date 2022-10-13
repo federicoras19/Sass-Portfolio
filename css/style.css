@@ -1,0 +1,467 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
+
+html {
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+body::-webkit-scrollbar {
+  width: 1vw; }
+
+body::-webkit-scrollbar-track {
+  background: #141414; }
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  border: 1vw solid white; }
+
+@media (max-width: 425px) {
+  header {
+    display: none; }
+  body {
+    background-color: #141414;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    body section.home {
+      background-color: #141414;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      body section.home article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: -5vh; }
+        body section.home article .welcome {
+          color: grey;
+          display: block;
+          font-size: 3vh;
+          font-family: 'IBM Plex Mono', monospace; }
+        body section.home article div {
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: column;
+          align-items: flex-end; }
+          body section.home article div .h2 {
+            color: white;
+            font-size: 5vh;
+            font-style: italic;
+            display: block; }
+          body section.home article div .phrase {
+            color: grey;
+            font-weight: lighter;
+            display: block;
+            white-space: nowrap;
+            border-right: 4px solid;
+            width: 22ch;
+            animation-delay: 5s;
+            animation: typing 3s steps(22), blink 0.5s infinite step-end alternate-reverse;
+            overflow: hidden; }
+  @keyframes typing {
+    from {
+      width: 0; } }
+  @keyframes blink {
+    50% {
+      border-color: transparent; } }
+    body section.aboutMe {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-around; }
+      body section.aboutMe .photo {
+        background-image: url("../img/Profile.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 20vh;
+        width: 60vw;
+        border-radius: 10%; }
+      body section.aboutMe .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        width: 80vw; }
+      body section.aboutMe .technologies {
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        body section.aboutMe .technologies ul {
+          display: flex;
+          flex-direction: column; }
+          body section.aboutMe .technologies ul li {
+            list-style-type: none;
+            font-size: 1rem; }
+            body section.aboutMe .technologies ul li i {
+              margin-right: 1vw; }
+    body section.project-area {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      body section.project-area h2 {
+        text-decoration: underline;
+        position: relative;
+        top: -10vh; }
+      body section.project-area .p1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 75vh;
+        justify-content: space-evenly; }
+        body section.project-area .p1 h3 {
+          display: block; }
+        body section.project-area .p1 p {
+          display: block;
+          width: 90vw;
+          font-style: italic; }
+        body section.project-area .p1 .ph-p1 {
+          background-image: url("../img/Project1.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 30vh;
+          width: 90vw; }
+      body section.project-area .p2 {
+        display: none; }
+      body section.project-area .p3 {
+        display: none; }
+    body .contact {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      body .contact .social {
+        height: 40vh; }
+        body .contact .social ul {
+          list-style-type: none; }
+          body .contact .social ul li {
+            font-weight: lighter; }
+        body .contact .social .links {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-items: center;
+          font-size: 3rem; }
+      body .contact .location {
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        body .contact .location ul {
+          list-style-type: none; }
+          body .contact .location ul li {
+            font-weight: lighter; }
+        body .contact .location .region {
+          background-image: url("../img/region.png");
+          height: 80%;
+          width: 90vw;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain; }
+    body footer {
+      display: none; } }
+
+@media (min-width: 1024px) {
+  header {
+    background: #141414;
+    background: linear-gradient(180deg, #141414 80%, rgba(255, 255, 255, 0) 100%);
+    color: white;
+    position: fixed;
+    width: 100vw;
+    height: 10vh; }
+    header .nav-bar {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: lighter; }
+      header .nav-bar a {
+        text-decoration: none;
+        color: white; }
+      header .nav-bar .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 30vw; }
+        header .nav-bar .logo .decoration {
+          letter-spacing: -10px; }
+        header .nav-bar .logo .line {
+          animation: blinkLogo 2s infinite;
+          font-weight: bold;
+          position: relative;
+          left: 12.5px; }
+        header .nav-bar .logo .title {
+          font-weight: bold;
+          position: relative;
+          left: -5px; }
+  @keyframes blinkLogo {
+    0% {
+      opacity: 0%; }
+    50% {
+      opacity: 100%; }
+    100% {
+      opacity: 0%; } }
+        header .nav-bar .logo .title {
+          animation: blinkLogo 2s infinite;
+          margin-left: -10px; }
+        header .nav-bar .logo :nth-child(4) {
+          font-weight: lighter; }
+      header .nav-bar .menu {
+        display: flex;
+        justify-content: space-around;
+        width: 30vw; }
+        header .nav-bar .menu a {
+          text-decoration: none;
+          color: white;
+          margin: 2vw;
+          display: inline-block;
+          position: relative; }
+        header .nav-bar .menu a:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #ffffff;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out; }
+        header .nav-bar .menu a:hover:after {
+          transform: scaleX(1);
+          transform-origin: bottom left; }
+  @keyframes underline {
+    0% {
+      text-decoration: none; }
+    100% {
+      text-decoration: underline; } }
+  main {
+    display: flex;
+    flex-direction: column;
+    background-color: #141414;
+    color: white; }
+    main section {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    main section.home {
+      background-color: #141414;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      main section.home article {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      main section.home .welcome {
+        color: grey;
+        display: block;
+        font-size: 5vh;
+        font-family: 'IBM Plex Mono', monospace; }
+      main section.home div {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-end; }
+      main section.home .presentation {
+        color: white;
+        font-size: 5vh;
+        font-style: italic;
+        display: block; }
+      main section.home .phrase {
+        color: grey;
+        font-weight: lighter;
+        display: block;
+        white-space: nowrap;
+        border-right: 4px solid;
+        width: 22ch;
+        animation-delay: 5s;
+        animation: typing 3s steps(22), blink 0.5s infinite step-end alternate-reverse;
+        overflow: hidden; }
+  @keyframes typing {
+    from {
+      width: 0; } }
+  @keyframes blink {
+    50% {
+      border-color: transparent; } }
+    main section.aboutMe {
+      height: 100vh;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-evenly; }
+      main section.aboutMe .photo {
+        height: 50vh;
+        width: 30vw;
+        background-image: url("../img/Profile.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20px; }
+      main section.aboutMe .text {
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        main section.aboutMe .text h2 {
+          font-family: 'IBM Plex Mono', monospace; }
+      main section.aboutMe .technologies {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        main section.aboutMe .technologies h2 {
+          margin-top: 5vh;
+          font-family: 'IBM Plex Mono', monospace; }
+        main section.aboutMe .technologies ul {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          main section.aboutMe .technologies ul li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 2vw; }
+          main section.aboutMe .technologies ul .fa-html5:hover {
+            color: #f06529; }
+          main section.aboutMe .technologies ul .fa-css3-alt:hover {
+            color: #2965f1; }
+          main section.aboutMe .technologies ul .fa-js:hover {
+            color: #F0DB4F; }
+          main section.aboutMe .technologies ul .fa-git-alt:hover {
+            color: #F1502F; }
+          main section.aboutMe .technologies ul .fa-database:hover {
+            color: #1158f2; }
+    main section.project-area {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      main section.project-area h2 {
+        font-family: 'IBM Plex Mono', monospace; }
+      main section.project-area article {
+        display: flex;
+        width: 90vw;
+        justify-content: space-between;
+        flex-wrap: nowrap; }
+        main section.project-area article .p1 {
+          background-color: white;
+          color: #d85b08;
+          background-blend-mode: hard-light;
+          height: 60vh;
+          width: 25vw;
+          border-radius: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+          main section.project-area article .p1 h3 {
+            font-family: "Be Vietnam Pro", sans-serif; }
+          main section.project-area article .p1 p {
+            color: #242E52;
+            font-style: italic;
+            text-align: justify;
+            width: 60%;
+            font-weight: bold;
+            font-family: 'IBM Plex Mono', monospace; }
+        main section.project-area article .p1:hover {
+          cursor: pointer; }
+        main section.project-area article .p2 {
+          background-color: grey;
+          height: 60vh;
+          width: 25vw;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+        main section.project-area article .p3 {
+          background-color: grey;
+          height: 60vh;
+          width: 25vw;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+    main section.contact {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      main section.contact h2 {
+        font-family: 'IBM Plex Mono', monospace; }
+      main section.contact article {
+        display: flex; }
+        main section.contact article .social {
+          height: 60vh;
+          width: 40vw;
+          margin: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+        main section.contact article ul {
+          list-style-type: none;
+          font-size: 3vh; }
+          main section.contact article ul li {
+            font-size: 22px;
+            font-style: italic;
+            font-weight: lighter;
+            text-align: start;
+            position: relative;
+            left: 65px; }
+            main section.contact article ul li :nth-child(10) {
+              color: red; }
+        main section.contact article .links {
+          display: flex;
+          flex-direction: column; }
+          main section.contact article .links a {
+            text-decoration: none;
+            color: white; }
+            main section.contact article .links a i {
+              font-size: 10vh;
+              margin: 5vh; }
+      main section.contact .location {
+        height: 60vh;
+        width: 40vw;
+        margin: 20px; }
+        main section.contact .location .region {
+          background-image: url(../img/region.png);
+          background-repeat: no-repeat;
+          height: 48vh;
+          background-size: contain;
+          background-position: center; }
+  footer {
+    background-color: #141414;
+    color: grey;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; } }
