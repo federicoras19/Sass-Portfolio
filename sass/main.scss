@@ -428,6 +428,9 @@ body::-webkit-scrollbar-thumb {
                             }
                         }
                     }
+                    .fa-html5:hover{
+                        color: #F06529;
+                    }
                     .fa-git-alt:hover{
                         color: #F1502F;
                     }
@@ -460,7 +463,6 @@ body::-webkit-scrollbar-thumb {
                 width: 90vw;
                 justify-content: space-between;
                 flex-wrap: nowrap;
-                
                 .p1{
                     background-color: $text;
                     color: rgb(216, 91, 8);
