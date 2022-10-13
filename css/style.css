@@ -364,7 +364,7 @@ body::-webkit-scrollbar-thumb {
             font-size: 6vh;
             margin: 2vh; }
             main section.aboutMe .technologies ul li span {
-              font-size: 1vw; }
+              font-size: 1.0vw; }
         main section.aboutMe .technologies .fa-html5:hover {
           color: #F06529; }
         main section.aboutMe .technologies .fa-css3-alt:hover {
