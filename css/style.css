@@ -347,7 +347,7 @@ body::-webkit-scrollbar-thumb {
             flex-direction: column;
             align-items: center;
             margin-right: 2vw;
-            font-size: 32px; }
+            font-size: 3vw; }
           main section.aboutMe .technologies ul .fa-html5:hover {
             color: #f06529; }
           main section.aboutMe .technologies ul .fa-css3-alt:hover {
