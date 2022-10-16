@@ -176,6 +176,9 @@ body::-webkit-scrollbar-thumb {
             align-items: center;
             .social{
                 height: 40vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
                 ul{
                     list-style-type: none;
                     li{
@@ -189,12 +192,43 @@ body::-webkit-scrollbar-thumb {
                     justify-items: center;
                     font-size: 3rem;
                 }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    input{
+                        border-radius: 5px;
+                        border-color: $bg-color;
+                        text-align: center;
+                        width: 50vw;
+                    }
+                    textarea{
+                        display: block;
+                        border-radius: 5px;
+                        border-color: $bg-color;
+                        text-align: center;
+                        width: 50vw;
+                    }
+                    button{
+                        background-color: $subtitle;
+                        border-radius: 5px;
+                        border-style: none;
+                        text-align: center;
+                        color: $title;
+                        width: 50vw;
+                        margin: 1vh;
+                        font-style: italic;
+                    }                        
+                }
             }
             .location{
                 height: 40vh;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: space-between;
                 ul{
                     list-style-type: none;
                     li{
