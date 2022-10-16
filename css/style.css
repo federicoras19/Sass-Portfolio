@@ -428,7 +428,7 @@ body::-webkit-scrollbar-thumb {
           flex-direction: column;
           align-content: space-between;
           align-items: center;
-          justify-content: center; }
+          justify-content: space-between; }
         main section.contact article ul {
           list-style-type: none;
           font-size: 3vh; }
