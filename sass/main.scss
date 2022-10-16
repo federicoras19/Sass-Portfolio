@@ -24,7 +24,6 @@ body::-webkit-scrollbar-thumb {
     border: 1vw solid $text;  
 }
 
-
 @media (max-width: 425px){
     header{
         display: none;
@@ -525,6 +524,7 @@ body::-webkit-scrollbar-thumb {
                     margin: 20px;
                     display: flex;
                     flex-direction: column;
+                    align-content: space-between;
                     align-items: center;
                     justify-content: center;
                     }
@@ -536,16 +536,11 @@ body::-webkit-scrollbar-thumb {
                             font-style: italic;
                             font-weight: lighter;
                             text-align: start;
-                            position: relative;
-                            left: 65px;
-                            :nth-child(10){
-                                color: red;
-                            }
                         }
                     }
                     .links{
                         display: flex;
-                        flex-direction: column;
+                        
                         a{
                             text-decoration: none;
                             color: $text;
@@ -554,6 +549,36 @@ body::-webkit-scrollbar-thumb {
                                 margin: 5vh;
                             }
                         }
+                    }
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        input{
+                            border-radius: 5px;
+                            border-color: $bg-color;
+                            text-align: center;
+                            width: 20vw;
+                        }
+                        textarea{
+                            display: block;
+                            border-radius: 5px;
+                            border-color: $bg-color;
+                            text-align: center;
+                            width: 20vw;
+                        }
+                        button{
+                            background-color: $subtitle;
+                            border-radius: 5px;
+                            border-style: none;
+                            text-align: center;
+                            color: $title;
+                            width: 20vw;
+                            margin: 1vh;
+                            font-style: italic;
+                        }                        
                     }
                 }   
                 .location{

@@ -443,6 +443,7 @@ body::-webkit-scrollbar-thumb {
         margin: 20px;
         display: flex;
         flex-direction: column;
+        align-content: space-between;
         align-items: center;
         justify-content: center; }
       section.contact article ul {
@@ -452,20 +453,40 @@ body::-webkit-scrollbar-thumb {
           font-size: 22px;
           font-style: italic;
           font-weight: lighter;
-          text-align: start;
-          position: relative;
-          left: 65px; }
-          section.contact article ul li :nth-child(10) {
-            color: red; }
+          text-align: start; }
       section.contact article .links {
-        display: flex;
-        flex-direction: column; }
+        display: flex; }
         section.contact article .links a {
           text-decoration: none;
           color: white; }
           section.contact article .links a i {
             font-size: 10vh;
             margin: 5vh; }
+      section.contact article form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        section.contact article form input {
+          border-radius: 5px;
+          border-color: #141414;
+          text-align: center;
+          width: 20vw; }
+        section.contact article form textarea {
+          display: block;
+          border-radius: 5px;
+          border-color: #141414;
+          text-align: center;
+          width: 20vw; }
+        section.contact article form button {
+          background-color: grey;
+          border-radius: 5px;
+          border-style: none;
+          text-align: center;
+          color: white;
+          width: 20vw;
+          margin: 1vh;
+          font-style: italic; }
     section.contact .location {
       height: 60vh;
       width: 40vw;
