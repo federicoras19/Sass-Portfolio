@@ -176,6 +176,9 @@ body::-webkit-scrollbar-thumb {
             align-items: center;
             .social{
                 height: 40vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
                 ul{
                     list-style-type: none;
                     li{
@@ -189,12 +192,43 @@ body::-webkit-scrollbar-thumb {
                     justify-items: center;
                     font-size: 3rem;
                 }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    input{
+                        border-radius: 5px;
+                        border-color: $bg-color;
+                        text-align: center;
+                        width: 50vw;
+                    }
+                    textarea{
+                        display: block;
+                        border-radius: 5px;
+                        border-color: $bg-color;
+                        text-align: center;
+                        width: 50vw;
+                    }
+                    button{
+                        background-color: $subtitle;
+                        border-radius: 5px;
+                        border-style: none;
+                        text-align: center;
+                        color: $title;
+                        width: 50vw;
+                        margin: 1vh;
+                        font-style: italic;
+                    }                        
+                }
             }
             .location{
                 height: 40vh;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: space-between;
                 ul{
                     list-style-type: none;
                     li{
@@ -203,7 +237,7 @@ body::-webkit-scrollbar-thumb {
                 }
                 .region{
                     background-image: url("../img/region.png");
-                    height: 80%;
+                    height: 60%;
                     width: 90vw;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -503,7 +537,7 @@ body::-webkit-scrollbar-thumb {
                     flex-direction: column;
                     align-content: space-between;
                     align-items: center;
-                    justify-content: space-between;
+                    justify-content: center;
                     }
                     ul{
                         list-style-type: none;
@@ -517,6 +551,7 @@ body::-webkit-scrollbar-thumb {
                     }
                     .links{
                         display: flex;
+                        
                         a{
                             text-decoration: none;
                             color: $text;
@@ -579,6 +614,7 @@ body::-webkit-scrollbar-thumb {
         display: flex;
         font-style: italic;
         justify-content: center;
+        align-items: flex-end;
     }
 }
 
