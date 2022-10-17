@@ -205,7 +205,7 @@ body::-webkit-scrollbar-thumb {
             font-weight: lighter; }
         body .contact .location .region {
           background-image: url("../img/region.png");
-          height: 80%;
+          height: 60%;
           width: 90vw;
           background-repeat: no-repeat;
           background-position: center;
